@@ -18,3 +18,7 @@ Route::get('menu', 'menuController@index')->name('menu');
 
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::post('salir', 'Auth\LoginController@salir')->name('salir');
+
+Route::get('admin/login', 'AdminController@ShowLoginForm');
+Route::post('admin/login', 'AdminController@login');
+Route::get('admin/menuAdmin', 'AdminController@mostrarMenuAdmin');
