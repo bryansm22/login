@@ -20,4 +20,5 @@ class AdminController extends Controller
     public  function mostrarMenuAdmin(){
         return 'Aqui irá el menu de admin';
     }
+
 }

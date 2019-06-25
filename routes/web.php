@@ -22,3 +22,5 @@ Route::post('salir', 'Auth\LoginController@salir')->name('salir');
 Route::get('admin/login', 'AdminController@ShowLoginForm');
 Route::post('admin/login', 'AdminController@login');
 Route::get('admin/menuAdmin', 'AdminController@mostrarMenuAdmin');
+
+Route::get('entrada', 'menuController@generarEntrada')->name('entrada');

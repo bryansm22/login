@@ -5,8 +5,9 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h1 class="panel-title">
-                    Bienvenido {{ auth()->user()->name }}
+                    Aquí irá el menu
                 </h1>
+                <a class="btn btn-primary" href="entrada" role="button">Entradas</a>
             </div>
         </div>
     </div>

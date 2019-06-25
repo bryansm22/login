@@ -11,18 +11,30 @@
     <script src="/js/bootstrap/bootstrap.min.js"></script> -->
 </head>
 <body>
-        <nav class="navbar" >
-            <div class="container-fluid">
-                <ul class="nav navbar-right">
-                    <li>
-                        <form method="POST" ACTION=" {{  route('salir') }} ">
-                            {{csrf_field() }}
-                            <button class="btn btn-danger btn-block">Cerrar Sesión</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+       <div class="container">
+           <nav class="navbar" >
+               <div class="container-fluid">
+                   <ul class=" list-inline navbar-right">
+                       <!--
+                        <li class="list-inline-item">
+                           <img src="images/user_icon.png" alt="usuario" width="5%" height="5%">
+                       </li>
+                        -->
+                       <li class="list-inline-item">
+                           <h4>{{ auth()->user()->name }}</h4>
+                       </li>
+                       <li class="list-inline-item">
+                           <form method="POST" ACTION=" {{  route('salir') }} ">
+                               {{csrf_field() }}
+                               <button class="btn btn-danger btn-block">Cerrar Sesión</button>
+                           </form>
+                       </li>
+
+                   </ul>
+               </div>
+           </nav>
+       </div>
+
 
 
     <div class="container">
