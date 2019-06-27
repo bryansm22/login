@@ -11,6 +11,11 @@
                 <label>Código</label>
                 <input type="text" class="form-control" id="idEntrada" placeholder="Código Generado" disabled>
             </div>
+            <div class="form-group">
+                <label>Tipo de entrada:</label>
+                {!! Form::select('tipo_entrada', $usuarios) !!}
+
+            </div>
         </form>
     </div>
 
