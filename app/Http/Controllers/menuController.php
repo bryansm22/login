@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class menuController extends Controller
 {
@@ -13,10 +14,10 @@ class menuController extends Controller
         return view('menu');
     }
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+        public function __construct()
+        {
+            $this->middleware('auth');
+        }
 
     public function generarEntrada(){
         if (Auth::check()) {
