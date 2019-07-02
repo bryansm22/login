@@ -23,4 +23,4 @@ Route::get('admin/login', 'AdminController@ShowLoginForm');
 Route::post('admin/login', 'AdminController@login');
 Route::get('admin/menuAdmin', 'AdminController@mostrarMenuAdmin');
 
-Route::resource('entrada', 'menuController@generarEntrada');
+Route::resource('entrada', 'entradasController');

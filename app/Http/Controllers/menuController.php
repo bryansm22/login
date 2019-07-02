@@ -11,15 +11,13 @@ class menuController extends Controller
 
 
     public function index(){
-        //$usuarios = User::pluck('name', 'email');
-        //return view('entradas', compact('usuarios'));
         return view('menu');
     }
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+        public function __construct()
+        {
+            $this->middleware('auth');
+        }
 
     public function generarEntrada(){
         if (Auth::check()) {
